@@ -1,7 +1,10 @@
 :root{
     --header-logo-width: 60px;
+    --product-tile-width: 72vw;
 
     --clr-primary-bg: rgb(255, 255, 255);
+    --clr-tile-lightgray: rgb(246, 246, 246);
+
 
     --fs-nav-buttons: 1rem;
     --fs-section-header: 24px;
@@ -11,6 +14,7 @@
     --section-one-video-width: 158px;
     --section-one-video-height: 200px;
 
+
 }
 
 /* UTILITY CLASSES */
@@ -19,8 +23,44 @@
 }
 
 .scroll-hidden::-webkit-scrollbar {
-    display: none;
+    background-color: transparent;
+    height: 10px;
+    margin-top: 10px;
 }
+
+.scroll-hidden::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.fs-7{
+    font-size: 14px;
+}
+.fs-8{
+    font-size: 12px;
+}
+.fs-9{
+    font-size: 10px;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+
+.font-weight-500{
+    font-weight: 500;
+}
+.fc-gray-500{
+    color: rgb(155, 155, 155);
+}
+
+.text-line-through{
+    text-decoration: line-through;
+}
+
+.success{
+    color: green;
+}
+
 
 /* styles */
 
@@ -179,6 +219,101 @@ nav{
 }
 
 
+.timer-container img{
+    width: 100%;
+}
+
+.product-tile{
+    position: relative;
+    min-width: var(--product-tile-width);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--clr-tile-lightgray);
+    border: 1px solid rgb(222, 222, 222);
+    margin-right: 1rem;
+}
+
+.image-container{
+    position: relative;
+}
+
+.product-tile img{
+    width: 100%;
+    aspect-ratio: 8 / 8;
+    object-fit: cover;
+}
+
+.clr-golden{
+    color: rgb(251, 172, 26);
+}
+
+
+.coller-pellet{
+    --width: 1.2rem;
+    display: block;
+    height: var(--width);
+    width: var(--width);
+    border-radius: 59%;
+    margin-left: -0.5rem;
+    border: 1px solid white;
+}
+
+
+.add-to-cart-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.partial-underline{
+    position: relative;
+}
+.partial-underline::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: red;
+
+    bottom: 0px;
+    right: 0;
+}
+
+.attraction > div{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    --radius: 5px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    width: max-content;
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+}
+
+.usb > div{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+.usb > div > div{
+    margin-inline: auto;
+    display: block;
+    border-radius: 20px;
+    width: 60%;
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: rgb(255, 174, 0);
+}
 @media (min-width: 480px){
     :root{
         --section-one-video-width: 318px;
@@ -193,12 +328,18 @@ nav{
     }
 }
 
+
 @media (min-width: 750px){
     :root{
         --header-logo-width: 85px;
+        --product-tile-width:35vw;
     }
 }
-
+@media (min-width: 1000px){
+    :root{
+        --product-tile-width: 20vw;
+    }
+}
 @media (min-width: 1200px){
     #searchBtn {
         background-color: rgb(246, 246, 246);
