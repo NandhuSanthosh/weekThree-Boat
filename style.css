@@ -320,6 +320,115 @@ nav{
     border: 1px solid white;
     background-color: rgb(255, 174, 0);
 }
+
+.best-of-boats .button-section{
+    display: flex;
+    gap: 0px;
+    font-size: 12px;
+}
+.best-of-boats .button-section button{
+    color: rgb(121, 121, 121);
+    padding: 10px 25px;
+    border-radius: 50px;
+    width: max-content;
+    white-space: nowrap;
+}
+.best-of-boats .button-section [active]{
+    background-color: rgb(230, 230, 230);
+    font-weight: bold;
+    color: black;
+}
+.best-of-boats .button-section button:hover{
+    color: rgb(69, 69, 69);
+}
+
+.features{
+    justify-content: space-between;
+    width: min(50rem, 90%);
+    display: flex;
+}
+
+.features > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;    
+}
+.features>div img {
+    width: 82px;
+}
+.features > div > span{
+    text-align: center;
+    width: min-content;
+}
+
+
+
+
+.show-by-lifestyle .gap{
+    gap: 20px;
+}
+
+.image-container > div{
+    min-width: 70vw;
+}
+.show-by-lifestyle .image-details .title{
+    font-size: 28px;
+    font-weight: bold
+}
+.show-by-lifestyle .image-details{
+    gap: 10px;
+    margin-top: -10px;
+    background-color: #eff4f7 ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.blog-container > div{
+    border-radius: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    min-width: 300px;
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-container  img {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+}
+.blog-container button{
+    position: absolute;
+    bottom: 10px;
+    border-radius: 40px;
+    width: 90%;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+.blog-title{
+    font-size: 18px;
+}
+.blog-details > div{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.carousel-item{
+    height: 20rem;
+    background-color: gray;
+}
+
+.blog-details .date{
+    color: rgb(131, 131, 131);
+}
 @media (min-width: 480px){
     :root{
         --section-one-video-width: 318px;
@@ -340,11 +449,35 @@ nav{
         --header-logo-width: 85px;
         --product-tile-width:35vw;
     }
+    .features>div {
+        font-size: 18px;
+    }
+    .features>div img {
+        width: 112px;
+    }
+    .image-container>div {
+        min-width: 30vw;
+    }
 }
 @media (min-width: 1000px){
     :root{
         --product-tile-width: 21.3vw;
         --fs-section-buttons: 1rem;
+    }
+    .best-of-boats .button-section {
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+    }
+    .image-container > div {
+        min-width: 15vw;
+    }
+    .show-by-lifestyle .image-details .title {
+        font-size: 19px;
+    }
+    .blog-container > div{
+        min-width: 21vw;
+        max-width:21vw;
     }
 }
 @media (min-width: 1200px){
