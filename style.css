@@ -6,13 +6,16 @@
     --clr-tile-lightgray: rgb(246, 246, 246);
 
 
+
     --fs-nav-buttons: 1rem;
     --fs-section-header: 24px;
+    --fs-section-buttons: 12px;
 
     --fc-secondary: rgb(47, 47, 47);
 
     --section-one-video-width: 158px;
     --section-one-video-height: 200px;
+    
 
 
 }
@@ -31,6 +34,7 @@
 .scroll-hidden::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background-color: rgb(235, 235, 235);
+
 }
 
 .fs-7{
@@ -107,6 +111,7 @@ nav{
 .nav-buttons  a:hover{
     color: rgb(0, 0, 0);
     font-weight: bold;
+    text-decoration: none;
 }
 .nav-buttons a:after {
     --width: 40%;
@@ -226,6 +231,7 @@ nav{
 .product-tile{
     position: relative;
     min-width: var(--product-tile-width);
+    max-width: var(--product-tile-width);
     overflow: hidden;
     border-radius: 10px;
     background-color: var(--clr-tile-lightgray);
@@ -337,7 +343,8 @@ nav{
 }
 @media (min-width: 1000px){
     :root{
-        --product-tile-width: 20vw;
+        --product-tile-width: 21.3vw;
+        --fs-section-buttons: 1rem;
     }
 }
 @media (min-width: 1200px){
