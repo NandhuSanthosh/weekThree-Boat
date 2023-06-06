@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Boat Earbuds!</title>
     <script src="https://kit.fontawesome.com/981a38a7c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
@@ -46,11 +44,11 @@
                     </li>
                     <li>
                         <div>
-                            <a href="#"> Daily Deals</a> 
+                            <a href="#daily-deals"> Daily Deals</a> 
                     </li>
                     <li>
                         <div>
-                            <a href="#" >Gift With boAt </a>
+                            <a href="#best-of-boat" >Gift With boAt </a>
                         </div>    
                     </li>
                     <li><div>
@@ -74,7 +72,8 @@
 
     <main>
         <div class="hero">
-            <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -82,32 +81,27 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
                 </div>
-
-                <div class="carousel-inner ">
-                    <div class="carousel-item active ">
-                        <img src="assets/hero/hero-background-s.gif" class="d-block w-100 d-sm-none" alt="...">
-                        <img src="assets/hero/hero-background.gif" class="d-block w-100 d-none d-sm-block" alt="...">
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./assets/hero/hero-background.gif">
+                            <img src="./assets/hero/hero-background-s.gif" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
-                    <div class="carousel-item ">
-                        <img src="assets/hero/hero-background2-s.jpg" class="d-block w-100 d-sm-none" alt="...">
-                        <img src="assets/hero/hero-background2s.jpg" class="d-block w-100 d-none d-sm-block" alt="...">
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./assets/hero/hero-background2s.jpg">
+                            <img src="./assets/hero/hero-background2-s.jpg" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
-                    <div class="carousel-item  ">
-                        <img src="assets/hero/hero-background3-s.jpg" class="d-block w-100 d-sm-none" alt="...">
-                        <img src="assets/hero/hero-background3.jpg" class="d-block w-100 d-none d-sm-block" alt="...">
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./assets/hero/hero-background3.jpg">
+                            <img src="./assets/hero/hero-background3-s.jpg" class="d-block w-100" alt="...">
+                        </picture>
                     </div>
-                    <div class="carousel-item  ">
-                        <img src="assets/hero/hero-background4-s.jpg" class="d-block w-100 d-sm-none" alt="...">
-                        <img src="assets/hero/hero-background4.jpg" class="d-block w-100 d-none d-sm-block" alt="...">
-                    </div>
-                
                 </div>
-
-                
-                
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,6 +114,7 @@
                 </button>
             </div>
         </div>
+        
         <div class="recomented mt-4">
             <div class="media-scroller scroll-hidden px-2">
                 <div >
@@ -211,7 +206,7 @@
             </div>
         </div>
 
-        <div class="daily-deal mt-2 mt-md-3 py-3 ">
+        <div id="daily-deals" class="daily-deal mt-2 mt-md-3 py-3 ">
             <h3 class="section-title ps-3 ps-md-5">Daily <span class="partial-underline">Deals</span></h3>
             
             <div class="timer-container px-3 px-md-5 mt-2">
@@ -322,7 +317,7 @@
             </div>
         </div>
 
-        <div class="best-of-boats mt-2 mt-md-3 py-3 ">
+        <div id="best-of-boat" class="best-of-boats mt-2 mt-md-3 py-3 ">
             <h3 class="section-title ps-3 ps-md-5 mb-3">Best of <span class="partial-underline">boAt</span></h3>
             <div class="ps-3 ps-md-5 mb-3 my-md-3">
                 <div class="button-section media-scroller">
@@ -452,7 +447,7 @@
     </main>
 
     <footer>
-        <div class="footer-element-container p-3 p-md-4 font-weight-bold">
+        <div class="footer-element-container p-3 p-md-4 p-lg-5 font-weight-bold">
             <div>
                 <img src="./assets/boAt_logo_small.svg" class="mb-3" alt="">
                 <h4 class="mb-3">Subscribe to our email alerts!</h4>

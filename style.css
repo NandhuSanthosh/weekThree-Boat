@@ -421,11 +421,6 @@ nav{
     -webkit-box-orient: vertical;
 }
 
-.carousel-item{
-    height: 20rem;
-    background-color: gray;
-}
-
 .blog-details .date{
     color: rgb(131, 131, 131);
 }
