@@ -429,10 +429,50 @@ nav{
 .blog-details .date{
     color: rgb(131, 131, 131);
 }
+
+.footer-element-container{
+    background-color:rgb(243, 243, 243);
+    font-size: 20px;
+}
+
+.footer-element-container .input-container{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    width: max-content;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer-element-container input{
+    border: none;
+    width: min(90vw, 400px);
+    background-color: transparent;
+}
+
+.social-media-container{
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-element-container p{
+    color: gray;
+    line-height: 16px;
+}
+
+
 @media (min-width: 480px){
     :root{
         --section-one-video-width: 318px;
-        --section-one-video-height: 318px;
     }
     .recomented{
         display: none;
@@ -457,6 +497,19 @@ nav{
     }
     .image-container>div {
         min-width: 30vw;
+    }
+    .footer-element-container{
+        font-size: 24px;
+    }
+    .footer-element-container .copy-right {
+        padding-inline: 20vw;
+    }
+    .social-media-container {
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 @media (min-width: 1000px){
