@@ -24,10 +24,10 @@ dummyData.push(new ProductDetails("Ultima Call Max", 8499, 2499, "Be the first t
 dummyData.push(new ProductDetails("Rockerz 255 touch",2999 ,1499, "Be the first to review", ["#000000", "#003eff", "#79afb4"],"New Launch" ,"30 HOURS PLAYBACK", "./assets/new-launches/p3.png"))
 dummyData.push(new ProductDetails("Aavante Bar Chord", 21999, 9499, "Be the first to review", ["#000000", "#003eff", "#79afb4"],"New Launch" ,"Wireless Subwoofer", "./assets/new-launches/p4.png"))
 
-dummyData.push(new ProductDetails("Immortal 121", 3499, 1699, "4.8", ["#000000", "#d7d7d7"],"" ,"40 Hours Playback", "./assets/best-of-boat/b1.gif"))
-dummyData.push(new ProductDetails("Airdopes 115", 2990, 1499, "4.9", ["#d7d7d7", "#003EFF", "#DC3545"],"Super Saver" ,"Clear Callingg", "./assets/best-of-boat/b2.jpg"))
-dummyData.push(new ProductDetails("Airdopes 131 PRO", 2990, 1299, "4.9", ["#393939", "#b77a8d", "#003EFF"],"" ,"45 Hours Playback", "./assets/best-of-boat/b3.webp"))
-dummyData.push(new ProductDetails("Airdopes 161", 2490, 1099, "4.9", ["#657286","#d7d7d7", "#000000"],"" ,"17 Hours Playback", "./assets/best-of-boat/b4.jpg"))
+dummyData.push(new ProductDetails("Immortal 121", 3499, 1699, "4.8", ["#000000", "#d7d7d7"],"" ,"40 Hours Playback", ["./assets/best-of-boat/b1.gif", "./assets/best-of-boat/b1-m.gif"]))
+dummyData.push(new ProductDetails("Airdopes 115", 2990, 1499, "4.9", ["#d7d7d7", "#003EFF", "#DC3545"],"Super Saver" ,"Clear Callingg", ["./assets/best-of-boat/b2.jpg", "./assets/best-of-boat/b2-m.jpg"]))
+dummyData.push(new ProductDetails("Airdopes 131 PRO", 2990, 1299, "4.9", ["#393939", "#b77a8d", "#003EFF"],"" ,"45 Hours Playback", ["./assets/best-of-boat/b3.webp, ./assets/best-of-boat/b3-m.webp"]))
+dummyData.push(new ProductDetails("Airdopes 161", 2490, 1099, "4.9", ["#657286","#d7d7d7", "#000000"],"" ,"17 Hours Playback", ["./assets/best-of-boat/b4.jpg", "./assets/best-of-boat/b4-m.jpg"]))
 
 
 const dailyDeals = ["Airdopes 131","Storm Call", "Rockerz 235 V2" ,"Wave Lite"]

@@ -61,12 +61,16 @@ function createProductTile(proDetails){
 
     const discountPercentage = findPercentage(proDetails.currPrice, proDetails.ogPrice);
 
+    let colorSet = proDetails.imgLink[1] + " 500w, " + proDetails.imgLink[0] + " 1000w";
+
+
+
     const productTile = document.createElement('div');
     productTile.classList.add('product-tile');
 
     const tile = `
                         <div class="image-container" >
-                            <img src="${proDetails.imgLink}" alt="">
+                            <img src="${proDetails.imgLink[0]}" srcset="${colorSet}" alt="">
                             <div class="usb">
                                 <div >
                                     <div class="d-flex justify-content-center">
