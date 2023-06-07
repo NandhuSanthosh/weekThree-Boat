@@ -444,7 +444,7 @@ nav{
 
 .footer-element-container input{
     border: none;
-    width: min(90vw, 400px);
+    width: min(65vw, 400px);
     background-color: transparent;
 }
 
