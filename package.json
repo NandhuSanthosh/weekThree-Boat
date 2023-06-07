@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "shark": "^2.3.0"
+    "shark": "^2.3.0",
+    "sharp": "^0.32.1"
   }
 }
